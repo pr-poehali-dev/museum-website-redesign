@@ -93,75 +93,91 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <nav className="fixed top-0 w-full z-50 glass-effect border-b border-purple-100">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold gradient-text">SFMOMA</h1>
-          <div className="flex gap-6 items-center">
-            <a href="#gallery" className="text-sm font-medium hover:text-primary transition-colors">
+      <nav className="fixed top-0 w-full z-50 bg-white border-b border-gray-200">
+        <div className="container mx-auto px-6 py-5 flex justify-between items-center">
+          <h1 className="text-xl font-semibold text-black">SFMOMA</h1>
+          <div className="flex gap-8 items-center">
+            <a href="#gallery" className="text-sm text-gray-700 hover:text-black transition-colors">
               Коллекция
             </a>
-            <a href="#about" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="#about" className="text-sm text-gray-700 hover:text-black transition-colors">
               О музее
             </a>
-            <Button variant="outline" size="sm">
+            <a href="#" className="text-sm text-gray-700 hover:text-black transition-colors">
               Билеты
-            </Button>
+            </a>
           </div>
         </div>
       </nav>
 
-      <section className="relative pt-32 pb-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-pink-50 opacity-50" />
-        <div className="container mx-auto relative z-10">
-          <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h2 className="text-6xl md:text-8xl font-black mb-6 leading-tight">
-              Где искусство <br />
+      <section className="pt-32 pb-16 px-6">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight tracking-tight">
+              Где искусство<br />
               <span className="gradient-text">встречает будущее</span>
             </h2>
-            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Самая инновационная коллекция современного искусства в Сан-Франциско
+            <p className="text-base text-gray-600 mb-10 max-w-xl mx-auto">
+              Самая инновационная коллекция современного<br />искусства в Сан-Франциско
             </p>
-            <div className="flex flex-wrap gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-purple-600 to-pink-600 hover:opacity-90">
+            <div className="flex gap-4 justify-center">
+              <Button 
+                size="lg" 
+                className="bg-black text-white hover:bg-gray-800 rounded-md px-8"
+              >
                 Смотреть коллекцию
               </Button>
-              <Button size="lg" variant="outline">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border-gray-300 text-black hover:bg-gray-50 rounded-md px-8"
+              >
                 Планировать визит
               </Button>
             </div>
           </div>
-        </div>
-        
-        <div className="container mx-auto mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 animate-slide-up">
-          <div className="relative h-64 rounded-3xl overflow-hidden group">
-            <img 
-              src="https://cdn.poehali.dev/projects/f76ec7a8-7e4f-41e4-8d9e-f74db0ea4bff/files/061e0b78-23c3-44b6-a318-a459f1a483c1.jpg"
-              alt="Art 1"
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+
+          <div className="grid grid-cols-12 gap-4 mb-4 animate-slide-up">
+            <div className="col-span-7 row-span-2">
+              <div className="relative h-full min-h-[500px] rounded-2xl overflow-hidden group">
+                <img 
+                  src="https://cdn.poehali.dev/projects/f76ec7a8-7e4f-41e4-8d9e-f74db0ea4bff/files/b16d3214-329d-4e5a-bc4d-f3808a0439fc.jpg"
+                  alt="Abstract Art"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+            </div>
+            
+            <div className="col-span-5">
+              <div className="relative h-64 rounded-2xl overflow-hidden group">
+                <img 
+                  src="https://cdn.poehali.dev/projects/f76ec7a8-7e4f-41e4-8d9e-f74db0ea4bff/files/061e0b78-23c3-44b6-a318-a459f1a483c1.jpg"
+                  alt="Sculpture"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+            </div>
+            
+            <div className="col-span-5">
+              <div className="relative h-64 rounded-2xl overflow-hidden group">
+                <img 
+                  src="https://cdn.poehali.dev/projects/f76ec7a8-7e4f-41e4-8d9e-f74db0ea4bff/files/52869d61-bc9f-4a6b-bac8-0a22a84119c1.jpg"
+                  alt="Digital Art"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+            </div>
           </div>
-          <div className="relative h-64 rounded-3xl overflow-hidden group">
-            <img 
-              src="https://cdn.poehali.dev/projects/f76ec7a8-7e4f-41e4-8d9e-f74db0ea4bff/files/52869d61-bc9f-4a6b-bac8-0a22a84119c1.jpg"
-              alt="Art 2"
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-purple-900/60 to-transparent" />
-          </div>
-          <div className="relative h-64 rounded-3xl overflow-hidden group">
-            <img 
-              src="https://cdn.poehali.dev/projects/f76ec7a8-7e4f-41e4-8d9e-f74db0ea4bff/files/b16d3214-329d-4e5a-bc4d-f3808a0439fc.jpg"
-              alt="Art 3"
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-pink-900/60 to-transparent" />
+
+          <div className="grid grid-cols-2 gap-4">
+            <div className="h-32 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-700"></div>
+            <div className="h-32 rounded-2xl bg-black"></div>
           </div>
         </div>
       </section>
 
-      <section id="gallery" className="py-20 px-4 bg-gray-50">
-        <div className="container mx-auto">
+      <section id="gallery" className="py-20 px-6 bg-gray-50">
+        <div className="container mx-auto max-w-7xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
             Интерактивная <span className="gradient-text">галерея</span>
           </h2>
@@ -282,8 +298,8 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="about" className="py-20 px-4">
-        <div className="container mx-auto">
+      <section id="about" className="py-20 px-6">
+        <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -337,8 +353,8 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="bg-black text-white py-12 px-4">
-        <div className="container mx-auto">
+      <footer className="bg-black text-white py-12 px-6">
+        <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <h3 className="text-2xl font-bold gradient-text mb-4">SFMOMA</h3>
