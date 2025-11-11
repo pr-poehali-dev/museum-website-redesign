@@ -302,6 +302,112 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-16 sm:py-20 px-4 sm:px-6 bg-gray-50">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+              Актуальные <span className="gradient-text">выставки</span>
+            </h2>
+            <p className="text-gray-600 text-sm sm:text-base">
+              Погрузитесь в мир современного искусства
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-8">
+            <Card className="overflow-hidden border-0 shadow-xl rounded-3xl group cursor-pointer">
+              <div className="relative h-64 sm:h-80 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/f76ec7a8-7e4f-41e4-8d9e-f74db0ea4bff/files/52869d61-bc9f-4a6b-bac8-0a22a84119c1.jpg"
+                  alt="Exhibition"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute top-4 left-4">
+                  <Badge className="bg-red-500 text-white border-0">Сейчас идёт</Badge>
+                </div>
+              </div>
+              <div className="p-6 sm:p-8 bg-white">
+                <h3 className="text-2xl sm:text-3xl font-bold mb-3">Цифровая революция</h3>
+                <p className="text-gray-600 mb-4 text-sm sm:text-base">
+                  Исследование влияния технологий на современное искусство. 
+                  От виртуальной реальности до нейросетевой живописи.
+                </p>
+                <div className="flex items-center gap-4 text-sm text-gray-500">
+                  <div className="flex items-center gap-2">
+                    <Icon name="Calendar" size={16} />
+                    <span>До 15 марта 2025</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="MapPin" size={16} />
+                    <span>Зал 3</span>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="overflow-hidden border-0 shadow-xl rounded-3xl group cursor-pointer">
+              <div className="relative h-64 sm:h-80 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/f76ec7a8-7e4f-41e4-8d9e-f74db0ea4bff/files/b16d3214-329d-4e5a-bc4d-f3808a0439fc.jpg"
+                  alt="Exhibition"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute top-4 left-4">
+                  <Badge className="bg-purple-500 text-white border-0">Скоро</Badge>
+                </div>
+              </div>
+              <div className="p-6 sm:p-8 bg-white">
+                <h3 className="text-2xl sm:text-3xl font-bold mb-3">Постмодернизм сегодня</h3>
+                <p className="text-gray-600 mb-4 text-sm sm:text-base">
+                  Ретроспектива ключевых работ постмодернистов и их влияние 
+                  на современное искусство XXI века.
+                </p>
+                <div className="flex items-center gap-4 text-sm text-gray-500">
+                  <div className="flex items-center gap-2">
+                    <Icon name="Calendar" size={16} />
+                    <span>С 1 апреля 2025</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="MapPin" size={16} />
+                    <span>Зал 1</span>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 sm:py-20 px-4 sm:px-6 bg-gradient-to-br from-purple-600 via-purple-700 to-pink-600 text-white">
+        <div className="container mx-auto max-w-6xl text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+            Станьте частью искусства
+          </h2>
+          <p className="text-base sm:text-lg mb-8 sm:mb-10 max-w-2xl mx-auto opacity-90">
+            Членство в SFMOMA открывает безграничный доступ к коллекциям, эксклюзивным мероприятиям и многому другому
+          </p>
+          <div className="grid sm:grid-cols-3 gap-6 sm:gap-8 mb-10">
+            <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-6 sm:p-8">
+              <Icon name="Infinity" size={40} className="mx-auto mb-4" />
+              <h4 className="font-bold text-lg sm:text-xl mb-2">Безлимит</h4>
+              <p className="text-sm opacity-90">Неограниченные посещения круглый год</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-6 sm:p-8">
+              <Icon name="Sparkles" size={40} className="mx-auto mb-4" />
+              <h4 className="font-bold text-lg sm:text-xl mb-2">Эксклюзив</h4>
+              <p className="text-sm opacity-90">Приглашения на закрытые показы</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-6 sm:p-8">
+              <Icon name="Gift" size={40} className="mx-auto mb-4" />
+              <h4 className="font-bold text-lg sm:text-xl mb-2">Привилегии</h4>
+              <p className="text-sm opacity-90">Скидки в магазине и кафе музея</p>
+            </div>
+          </div>
+          <Button size="lg" className="bg-white text-purple-700 hover:bg-gray-100 rounded-full px-8">
+            Узнать о членстве
+          </Button>
+        </div>
+      </section>
+
       <section id="about" className="py-16 sm:py-20 px-4 sm:px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
@@ -353,6 +459,27 @@ const Index = () => {
               </div>
               <div className="hidden sm:block absolute -bottom-6 -right-6 w-48 h-48 sm:w-64 sm:h-64 bg-gradient-to-br from-purple-600 to-pink-600 rounded-3xl -z-10" />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 sm:py-20 px-4 sm:px-6 bg-gray-50">
+        <div className="container mx-auto max-w-4xl text-center">
+          <Icon name="Mail" size={48} className="mx-auto mb-6 text-primary" />
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            Будьте в курсе событий
+          </h2>
+          <p className="text-gray-600 mb-8 text-sm sm:text-base">
+            Подпишитесь на рассылку и узнавайте первыми о новых выставках и мероприятиях
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+            <Input 
+              placeholder="Ваш email" 
+              className="rounded-full flex-1"
+            />
+            <Button className="bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full px-8">
+              Подписаться
+            </Button>
           </div>
         </div>
       </section>
